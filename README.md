@@ -78,7 +78,8 @@ module "fsdr" {
 | <a name="output_region2_dr_protection_group_id"></a> [region2\_dr\_protection\_group\_id](#output\_region2\_dr\_protection\_group\_id) | Protection group OCID of region2 |
 | <a name="output_region2_members"></a> [region2\_members](#output\_region2\_members) | Members of the existing protection group in region2 |
 | <a name="output_region2_plan_ids"></a> [region2\_plan\_ids](#output\_region2\_plan\_ids) | OCID of region2 plans |
-
+| <a name="output_time_updated_region1"></a> [time\_updated\_region1](#output\_time\_updated\_region1) | Time updated in the region1 |
+| <a name="output_time_updated_region2"></a> [time\_updated\_region2](#output\_time\_updated\_region2) | Time updated in the region2 |
 
 
 ## Contributing
