@@ -6,6 +6,7 @@ data "oci_disaster_recovery_dr_protection_groups" "region2_dr_protection_groups"
   provider       = oci.region2
   compartment_id = var.region2_config["compartment_id"]
   display_name   = var.region2_config["protection_group_display_name"]
+  state          = "ACTIVE"
 }
 
 locals {
