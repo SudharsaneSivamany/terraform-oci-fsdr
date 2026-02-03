@@ -31,3 +31,14 @@ output "region2_plan_ids" {
   value       = { for entry in var.region2_config["dr_plan_and_execution"] : entry["plan_display_name"] => module.dr_plan_region2[entry["plan_display_name"]].dr_plan["id"] }
   description = "OCID of region2 plans"
 }
+
+output "time_updated_region1" {
+  value = module.dr_protection_group_region1.dr_protection_group.time_updated
+  description = "Time updated in the region1"
+}
+
+output "time_updated_region2" {
+  value = module.dr_protection_group_region2.dr_protection_group.time_updated
+  description = "Time updated in the region2"
+}
+
