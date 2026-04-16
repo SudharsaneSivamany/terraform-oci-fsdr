@@ -25,7 +25,7 @@ locals {
       bucket                                         = try(entry.bucket, "")
       connection_string_type                         = try(entry.connection_string_type, "")
       destination_availability_domain                = try(entry.destination_availability_domain, "")
-      destination_backup_policy_id                   = try(entry.destination_backup_policy_id, "")
+      destination_backup_policy_id                   = try(entry.destination_backup_policy_id, "") == "" ? null : entry.destination_backup_policy_id
       destination_capacity_reservation_id            = try(entry.destination_capacity_reservation_id, "")
       destination_compartment_id                     = try(entry.destination_compartment_id, "")
       destination_dedicated_vm_host_id               = try(entry.destination_dedicated_vm_host_id, "")
